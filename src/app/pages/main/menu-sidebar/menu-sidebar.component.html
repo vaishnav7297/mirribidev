@@ -1,0 +1,203 @@
+<aside #mainSidebar class="main-sidebar sidebar-light-primary elevation-1">
+  <div class="position-relative">
+    <!-- Brand Logo -->
+    <a [routerLink]="['/']" class="brand-link navbar-primary">
+      <img src="assets/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
+        style="opacity: 0.8;" />
+      <span class="brand-text font-weight-light text-light">Karippal Innovations</span>
+    </a>
+
+    <!-- Sidebar -->
+    <div
+      class="sidebar os-host os-theme-light os-host-overflow os-host-overflow-y os-host-resize-disabled os-host-scrollbar-horizontal-hidden os-host-transition">
+      <!-- Sidebar user (optional) -->
+      <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+        <div class="image">
+          <img src="assets/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image" />
+        </div>
+        <div class="info">
+          <a [routerLink]="['/profile']" class="d-block">Sreeraj Karippala</a>
+        </div>
+      </div>
+
+      <!-- Sidebar Menu -->
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column nav-compact" data-widget="treeview" role="menu"
+          data-accordion="false">
+          <!-- Add icons to the links using the .nav-icon class
+             with font-awesome or any other icon font library -->
+          <li class="nav-item">
+            <a [routerLink]="['/']" class="nav-link">
+              <i class="nav-icon fas fa-desktop"></i>
+              <p>
+                Dashboard
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a [routerLink]="['/import']" class="nav-link">
+              <i class="nav-icon fas fa-download"></i>
+              <p>
+                Import
+              </p>
+            </a>
+          </li>
+          <li class="nav-header">REPORTS</li>
+          <li class="nav-item">
+            <a [routerLink]="['/blank']" class="nav-link">
+              <i class="nav-icon fas fa-chart-line"></i>
+              <p>
+                Scheduled
+              </p>
+              <i class="right fas fa-angle-left"></i>
+            </a>
+            <ul class="nav nav-treeview" style="display: none;">
+              <li class="nav-item">
+                <a [routerLink]="['/report/revenue-stream']" class="nav-link">
+                  <i class="fas fa-poll nav-icon"></i>
+                  <p>Revenue Stream</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a [routerLink]="['/report/margin-stream']" class="nav-link">
+                  <i class="fas fa-poll nav-icon"></i>
+                  <p>Margin Stream</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a [routerLink]="['/report/expenditure-stream']" class="nav-link">
+                  <i class="fas fa-poll nav-icon"></i>
+                  <p>Expenditure Stream</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a [routerLink]="['/report/financial-performance']" class="nav-link">
+                  <i class="fas fa-poll nav-icon"></i>
+                  <p>Financial Performance</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a [routerLink]="['/blank']" class="nav-link">
+              <i class="nav-icon fas fa-chart-pie"></i>
+              <p>
+                Key Indications
+              </p>
+              <i class="right fas fa-angle-left"></i>
+            </a>
+            <ul class="nav nav-treeview" style="display: none;">
+              <li class="nav-item">
+                <a [routerLink]="['/report/working-capital']" class="nav-link">
+                  <i class="fas fa-poll nav-icon"></i>
+                  <p>Working Capital</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a [routerLink]="['/report/inventory-position']" class="nav-link">
+                  <i class="fas fa-poll nav-icon"></i>
+                  <p>Inventory Position</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a [routerLink]="['/report/booking-cancellation']" class="nav-link">
+                  <i class="fas fa-poll nav-icon"></i>
+                  <p>Booking and Cancellation</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a [routerLink]="['/report/revenue-stream-daily']" class="nav-link">
+                  <i class="fas fa-poll nav-icon"></i>
+                  <p>Revenue Stream (Daily)</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a [routerLink]="['/report/revenue-stream-correlation']" class="nav-link">
+                  <i class="fas fa-poll nav-icon"></i>
+                  <p>Revenue Stream (Correlation)</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a [routerLink]="['/blank']" class="nav-link">
+              <i class="nav-icon fas fa-chart-area"></i>
+              <p>
+                Financial
+              </p>
+              <i class="right fas fa-angle-left"></i>
+            </a>
+            <ul class="nav nav-treeview" style="display: none;">
+              <li class="nav-item">
+                <a [routerLink]="['/report/financial-statement-note']" class="nav-link">
+                  <i class="fas fa-poll nav-icon"></i>
+                  <p>Note on Financial Statement</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a [routerLink]="['/report/financial-statement']" class="nav-link">
+                  <i class="fas fa-poll nav-icon"></i>
+                  <p>Financial Statement</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a [routerLink]="['/report/ratio-analysis']" class="nav-link">
+                  <i class="fas fa-poll nav-icon"></i>
+                  <p>Ratio Analysis</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a [routerLink]="['/report/cashflow']" class="nav-link">
+                  <i class="fas fa-poll nav-icon"></i>
+                  <p>Cash Flow</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a [routerLink]="['/blank']" class="nav-link">
+              <i class="nav-icon fas fa-chart-bar"></i>
+              <p>
+                Exception
+              </p>
+              <i class="right fas fa-angle-left"></i>
+            </a>
+            <ul class="nav nav-treeview" style="display: none;">
+              <li class="nav-item">
+                <a [routerLink]="['/report/negative-groups']" class="nav-link">
+                  <i class="fas fa-poll nav-icon"></i>
+                  <p>Negative Groups</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-header">SETTINGS</li>
+          <li class="nav-item">
+            <a [routerLink]="['/blank']" class="nav-link">
+              <i class="nav-icon fas fa-store-alt"></i>
+              <p>
+                Account
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a [routerLink]="['/blank']" class="nav-link">
+              <i class="nav-icon fas fa-users"></i>
+              <p>
+                Team
+              </p>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <!-- /.sidebar-menu -->
+      <div class="d-block text-center text-muted">
+      <hr />
+      <small class="">
+        <strong>Copyright &copy; 2020 <a href="http://adminlte.io">Mirror Bi</a>.</strong>
+      </small>
+    </div>
+    </div>
+  </div>
+  <!-- /.sidebar -->
+</aside>

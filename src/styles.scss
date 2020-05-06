@@ -1,0 +1,51 @@
+/* You can add global styles to this file, and also import other style files */
+// @import '~bootstrap/scss/bootstrap';
+
+@import '~ionicons/css/ionicons.min.css';
+
+@import '~admin-lte/plugins/fontawesome-free/css/all.min.css';
+@import '~admin-lte/plugins/icheck-bootstrap/icheck-bootstrap.min.css';
+@import '~admin-lte/dist/css/adminlte.min.css';
+
+@import '~ngx-toastr/toastr';
+
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
+.breadcrumb-item {
+  padding-left: .1rem !important;
+
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+  display: inline-block;
+  padding-right: .1rem;
+  color: #6c757d;
+  content: "/";
+}
+
+.form-control-plaintext-sm {
+  height: calc(1.4rem) !important;
+}
+
+.chart-round {
+  min-height: 250px; height: 250px; max-height: 250px; max-width: 100%;
+}
+
+.chart-rectangle {
+  min-height: 250px; height: 250px; max-height: 250px; max-width: 100%;
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { }
